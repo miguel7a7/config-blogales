@@ -130,3 +130,14 @@ p{
         color: darken($color: $claro, $amount: 10);
     }
 }
+
+
+.btn-dark{
+    background-color: $dark;
+    color: $claro;
+
+    &:hover{
+        background-color: darken($color: $dark, $amount: 5);
+        color: darken($color: $claro, $amount: 10);
+    }
+}
