@@ -4,7 +4,9 @@ box-shadow:inset 3px 3px 3px #d0d0d0,inset -3px -3px 3px #f8f8f8;
 */
 @import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
-*, ::after, ::before {
+*,
+::after,
+::before {
   box-sizing: border-box;
 }
 
@@ -28,7 +30,12 @@ a {
   color: white;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin: 0;
 }
 
@@ -59,71 +66,129 @@ p {
 }
 
 .btn {
-  display: inline-block;
-  background-color: #e0ebed;
-  padding: 0.625rem 0.9375rem;
-  border-radius: 0.3125rem;
-  border: 0;
-  outline: 0;
-  color: #000;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
   cursor: pointer;
-  font-weight: 700;
-  margin: 0.625rem 0;
+  display: inline-block;
+  margin: 5px 0;
+  outline: none;
+  padding: 0.5rem 1rem;
   transition: background-color 0.3s ease, color 0.3s ease;
-  text-transform: uppercase;
-}
-.btn:hover {
-  background-color: #d0e1e4;
-  color: black;
-}
-
-.btn-block {
-  width: 100%;
 }
 
 .btn-success {
-  background-color: #008000;
-  color: #e0ebed;
+  background-color: #008435;
+  color: #f7f7f7;
 }
 .btn-success:hover {
-  background-color: #006700;
-  color: #c0d6da;
+  background-color: #00B74A;
+  color: #e0ebed;
+}
+
+.btn-success1 {
+  background-color: #008000;
+  color: #f7f7f7;
+}
+.btn-success1:hover {
+  background-color: #009a00;
+  color: #e0ebed;
 }
 
 .btn-danger {
   background-color: #dc143c;
-  color: #e0ebed;
+  color: #f7f7f7;
 }
 .btn-danger:hover {
-  background-color: #c51236;
-  color: #c0d6da;
+  background-color: #eb1f48;
+  color: #e0ebed;
 }
 
-.btn-edit {
-  background-color: #ff8c00;
-  color: #021626;
+.btn-update {
+  background-color: #cc7000;
+  color: #f7f7f7;
 }
-.btn-edit:hover {
-  background-color: #e67e00;
-  color: black;
+.btn-update:hover {
+  background-color: #ff8c00;
+  color: #e0ebed;
 }
 
 .btn-primary {
   background-color: #0275d8;
-  color: #e0ebed;
+  color: #f7f7f7;
 }
 .btn-primary:hover {
-  background-color: #0267bf;
-  color: #c0d6da;
+  background-color: #025aa5;
+  color: #e0ebed;
 }
 
 .btn-dark {
+  background-color: #161616;
+  color: #f7f7f7;
+}
+.btn-dark:hover {
   background-color: #2f2f2f;
   color: #e0ebed;
 }
-.btn-dark:hover {
-  background-color: #222222;
-  color: #c0d6da;
+
+/*=== Estilos only ===*/
+.btn-success-only {
+  border: thin solid #00B74A;
+  color: #00B74A;
+}
+.btn-success-only:hover {
+  background-color: #00B74A;
+  color: #e0ebed;
+}
+
+.btn-success1-only {
+  border: thin solid #008000;
+  color: #008000;
+}
+.btn-success1-only:hover {
+  background-color: #009a00;
+  color: #e0ebed;
+}
+
+.btn-danger-only {
+  border: thin solid #dc143c;
+  color: #dc143c;
+}
+.btn-danger-only:hover {
+  background-color: #eb1f48;
+  color: #e0ebed;
+}
+
+.btn-update-only {
+  border: thin solid #ff8c00;
+  color: #ff8c00;
+}
+.btn-update-only:hover {
+  background-color: #ff8c00;
+  color: #e0ebed;
+}
+
+.btn-primary-only {
+  border: thin solid #0275d8;
+  color: #0275d8;
+}
+.btn-primary-only:hover {
+  background-color: #025aa5;
+  color: #e0ebed;
+}
+
+.btn-dark-only {
+  border: thin solid #2f2f2f;
+  color: #e0ebed;
+}
+.btn-dark-only:hover {
+  background-color: #2f2f2f;
+  color: #e0ebed;
+}
+
+body {
+  background-color: #262626;
+  color: #a9a9a9;
 }
 
 /*# sourceMappingURL=styles.css.map */

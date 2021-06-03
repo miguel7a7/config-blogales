@@ -1,0 +1,95 @@
+//VIDEO BASE DE FALCOM MASTER
+
+crear el archivo jsconfig.json en la raiz
+y agregar el sig codigo
+{
+  "compilerOptions": {
+    "checkJs": true
+  },
+  "exclude": ["node_modules", "**/node_modules/*"]
+}
+
+o en el archivo dnd usaremos la funcion podemos colocar al inicio //@ts-check
+ 
+para commentar debemos colocar /** y se autocompletara segun a las variables de la funcion
+
+
+PARA VALORS CONST
+
+/**
+*esta variable almacena nombre
+* @type {string}	
+*/
+const nombre = 'miguel'
+
+PARA VALORES DE ARREGLOS
+/**
+*esta variable almacena una array
+* @type {Array<number>}                 
+*/
+
+// <string>cambiamos valores si queremos string
+	
+// <string/number>valores para nombres  y numeros
+
+
+const amigos = [1,2]
+
+
+PARA OBJETOS valores predefinidos propias
+/**
+*@typedef {object} usuario
+*@property {number} id
+*@property {string} nombre
+*@property {Number} edad
+*/
+
+/**
+* @type {usuario}
+*/
+
+const usuario = {
+	id:1,
+	nombre: 'carlos',
+	edad:25
+}
+
+
+
+
+PARA DOCUMENTAR TODO LA PAGINA UNA VEZ QUE SE CULMINE
+1.- npm init -y   			//creamos package json
+2.- npm install --save dev jsdoc  	// instalamos la dependencia
+3.- si sale error npm audit fix
+4.- en los scripts agregamos 
+	"docs": "jsdoc -c jsdoc.json"
+5.- creamos en lar raiz jsdoc.json
+6.- dentro de jsdoc
+{
+	"source":{
+		"includes":["./src"],
+		"includePattern": ".+\\.js(doc|x)?$",
+		"excludePattern": "node_modeles/|docs"	
+	},
+	
+	"plugins":[],
+	"opt":{
+		"destination":"docs/"	
+	}
+}
+
+7.- cremo una crpeta src
+8.- en la consola npm run docs y nos creara nuestra carpeta dentro de ella estara nuestra documentacion  
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,61 +1,62 @@
-
-
-
-
 /*
 box-shadow: 3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
 box-shadow:inset 3px 3px 3px #d0d0d0,inset -3px -3px 3px #f8f8f8;
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;500;600;700;800&display=swap");
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
-*,::after,::before{
+*,
+::after,
+::before {
     box-sizing: border-box;
 }
 
-html{
+html {
     //font-family: 'Bodoni Moda', serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: "Poppins", sans-serif;
     scroll-behavior: smooth;
     font-size: 16px;
-    
 }
 
 img {
     max-width: 100%;
 }
 
-body{
+body {
     margin: 0;
     overflow-x: hidden;
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
 }
 
-ul{
+ul {
     margin: 0;
     padding: 0;
 }
 
-ul li{
+ul li {
     list-style: none;
 }
 
-.flex{
+.flex {
     display: flex;
 }
 
-p{
+p {
     margin: 0;
 }
 
@@ -66,78 +67,4 @@ p{
 .hidden {
     opacity: 0;
     pointer-events: none;
-}
-
-.btn {
-    display: inline-block;
-    background-color: $claro;
-    padding: 0.625rem 0.9375rem;
-    border-radius: 0.3125rem;
-    border: 0;
-    outline: 0;
-    color: #000;
-    cursor: pointer;
-    font-weight: 700;
-    margin: 0.625rem 0;
-    transition: background-color 0.3s ease,color 0.3s ease;
-    text-transform: uppercase;
-    &:hover{
-        background-color: darken($color: $claro, $amount: 5);
-        color: darken($color: #000, $amount: 10);
-    }
-}
-
-.btn-block{
-    width: 100%;
-}
-
-.btn-success{
-    background-color: $success;
-    color: $claro;
-
-    &:hover{
-        background-color: darken($color: $success, $amount: 5);
-        color: darken($color: $claro, $amount: 10);
-    }
-}
-
-.btn-danger{
-    background-color: $danger;
-    color: $claro;
-
-    &:hover{
-        background-color: darken($color: $danger, $amount: 5);
-        color: darken($color: $claro, $amount: 10);
-    }
-}
-
-.btn-edit{
-    background-color: $edit;
-    color: $principal;
-
-    &:hover{
-        background-color: darken($color: $edit, $amount: 5);
-        color: darken($color: $principal, $amount: 10);
-    }
-}
-
-.btn-primary{
-    background-color: $primary;
-    color: $claro;
-
-    &:hover{
-        background-color: darken($color: $primary, $amount: 5);
-        color: darken($color: $claro, $amount: 10);
-    }
-}
-
-
-.btn-dark{
-    background-color: $dark;
-    color: $claro;
-
-    &:hover{
-        background-color: darken($color: $dark, $amount: 5);
-        color: darken($color: $claro, $amount: 10);
-    }
 }

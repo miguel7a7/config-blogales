@@ -1,0 +1,132 @@
+.btn {
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
+    margin: 5px 0;
+    outline: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.btn-success {
+    background-color: darken($color: $success-1, $amount: 10);
+    color: $claro-1;
+
+    &:hover {
+        background-color: $success-1;
+        color: $claro;
+    }
+}
+
+.btn-success1 {
+    background-color: $success;
+    color: $claro-1;
+
+    &:hover {
+        background-color: lighten($color: $success, $amount: 5);
+        color: $claro;
+    }
+}
+
+.btn-danger {
+    background-color: $danger;
+    color: $claro-1;
+
+    &:hover {
+        background-color: lighten($color: $danger, $amount: 5);
+        color: $claro;
+    }
+}
+
+.btn-update {
+    background-color: darken($color: $edit, $amount: 10);
+    color: $claro-1;
+
+    &:hover {
+        background-color: $edit;
+        color: $claro;
+    }
+}
+
+.btn-primary {
+    background-color: $primary;
+    color: $claro-1;
+
+    &:hover {
+        background-color: darken($color: $primary, $amount: 10);
+        color: $claro;
+    }
+}
+
+.btn-dark {
+    background-color: darken($color: $dark, $amount: 10);
+    color: $claro-1;
+
+    &:hover {
+        background-color: $dark;
+        color: $claro;
+    }
+}
+
+/*=== Estilos only ===*/
+.btn-success-only {
+    border: thin solid $success-1;
+    color: $success-1;
+
+    &:hover {
+        background-color: $success-1;
+        color: $claro;
+    }
+}
+
+.btn-success1-only {
+    border: thin solid $success;
+    color: $success;
+
+    &:hover {
+        background-color: lighten($color: $success, $amount: 5);
+        color: $claro;
+    }
+}
+
+.btn-danger-only {
+    border: thin solid $danger;
+    color: $danger;
+
+    &:hover {
+        background-color: lighten($color: $danger, $amount: 5);
+        color: $claro;
+    }
+}
+
+.btn-update-only {
+    border: thin solid $edit;
+    color: $edit;
+
+    &:hover {
+        background-color: $edit;
+        color: $claro;
+    }
+}
+
+.btn-primary-only {
+    border: thin solid $primary;
+    color: $primary;
+
+    &:hover {
+        background-color: darken($color: $primary, $amount: 10);
+        color: $claro;
+    }
+}
+
+.btn-dark-only {
+    border: thin solid $dark;
+    color: $claro;
+
+    &:hover {
+        background-color: $dark;
+        color: $claro;
+    }
+}
